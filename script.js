@@ -29,13 +29,13 @@ create_buttons(BUTTONS)
 
 let display = document.getElementById("display_val")
 
-let expresstion = ""
+let expression = ""
 
 function onClickHandler (key) {
-    if (key === "c") expresstion = ""
-    else if(key === "=") expresstion = eval(expresstion)
-    else if (isNaN(key)) expresstion = expresstion  + " " + (key === "x" ? "*" : key) + " "
-    else expresstion = expresstion + key
+    if (key === "c") expression = ""
+    else if(key === "=") expression = eval(expression)
+    else if (isNaN(key)) expression = expression  + " " + (key === "x" ? "*" : key) + " "
+    else expression = expression + key
 
-    display.innerText = expresstion || 0
+    display.innerText = expression || 0
 }
