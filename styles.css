@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+
+:root{
+    --main-bg: #f3f9f0;
+    --cal-bg: #dddddd;
+    --display-bg : #ffffff;
+    --num-pad: #343a3f;
+    --ope-pad: #ffbd00;
+    --equal-pad: #219443;
+    --clear_pad: #ca312e;
+}
+
+.bg-container {
+    background-color: var(--main-bg);
+    min-height: 100vh;
+}
+
+.calculator-bg {
+    background-color: var(--cal-bg);
+    width: 300px;
+    border-radius: 6px;
+}
+
+.calculator-top {
+    height: 90px;
+}
+
+.calculator-display {
+    background-color: var(--display-bg);
+    border-radius: 4px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.btn.number-button {
+    background-color: var(--num-pad);
+    color: #fff;
+    border-radius: 100px;
+    padding-top: 10px;
+}
+
+.btn.equal-button {
+    background-color: var(--equal-pad);
+    color: #fff;
+    border-radius: 100px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.btn.clear-button {
+    background-color: var(--clear_pad);
+    color: #fff;
+    border-radius: 100px;
+    padding-top: 10px;
+}
+
+.btn.arith-button {
+    background-color: var(--ope-pad);
+    color: #000;
+    border-radius: 100px;
+    padding-top: 10px;
+    font-weight: bold;
+}
